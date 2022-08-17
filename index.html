@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://cdn.tailwindcss.com"></script>
+
+        <title>Login Page</title>
+
+        <style>
+            .tooltip {
+                position: relative;
+                display: inline-block;
+                border-bottom: 1px dotted black;
+            }
+
+            .tooltip .tooltiptext {
+                visibility: hidden;
+                width: 150px;
+                background-color: #555;
+                color: #fff;
+                text-align: center;
+                border-radius: 6px;
+                padding: 5px 0;
+                position: absolute;
+                z-index: 1;
+                bottom: 125%;
+                left: 50%;
+                margin-left: -60px;
+                opacity: 0;
+                transition: opacity 0.3s;
+            }
+
+            .tooltip .tooltiptext::after {
+                content: "";
+                position: absolute;
+                top: 100%;
+                left: 50%;
+                margin-left: -5px;
+                border-width: 5px;
+                border-style: solid;
+                border-color: #555 transparent transparent transparent;
+            }
+
+            .tooltip:hover .tooltiptext {
+                visibility: visible;
+                opacity: 1;
+            }
+        </style>
+
+    </head>
+    <body>
+        <!-- login page headline  -->
+        <header>
+            <h1 class="text-5xl font-bold text-red-500 text-center p-12">Welcome to the largest bank in all over <span
+                    class="text-green-500">Bangladesh</span></h1>
+        </header>
+
+        <!-- Login page form -->
+        <main>
+            <section class="p-12  ">
+
+                <div class="bg-yellow-200 p-8 py-12 rounded-md  mx-auto  flex flex-col items-center">
+                    <div>
+                        <div class="tooltip">
+                            <input class="block p-5 mt-5  " type="email" name="email" id="email"
+                                placeholder="give your email addres ">
+                            <span class="tooltiptext">Hasan@gmail.com</span>
+                        </div>
+
+
+
+                        <div class="tooltip block">
+                            <input class="block p-5 mt-3 " type="password" name="" id="password"
+                                placeholder="give your password">
+                            <span class="tooltiptext">secret</span>
+                        </div>
+
+
+                        <div>
+                            <button id="login_btn"
+                                class=" block  px-8 py-3  rounded-md mt-3  bg-green-500 text-white font-bold  hover:bg-black">Log
+                                In</button>
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </section>
+        </main>
+
+
+
+        <script src="login.js"></script>
+    </body>
+</html>

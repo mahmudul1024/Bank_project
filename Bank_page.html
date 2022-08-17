@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://cdn.tailwindcss.com"></script>
+        <title>Bangla Bank </title>
+    </head>
+    <body>
+        <header>
+            <h1 class="text-5xl font-bold text-red-500 text-center p-12"> <span class="text-green-500">Transfer</span>
+                Money
+                Easily</h1>
+        </header>
+
+        <main>
+            <section class="mx-auto mx-12">
+                <div class="grid grid-cols-3 gap-6">
+                    <div class="bg-red-300 p-12 rounded-lg">
+                        <h2 class="text-3xl font-bold text-gray-600">Deposit</h2>
+                        <h3 class="text-2xl text-gray-600">$<span id="deposit_text">00</span>
+                        </h3>
+                    </div>
+
+                    <div class="bg-green-300 p-12 rounded-lg">
+                        <h2 class="text-3xl text-gray-600 font-bold">withdraw</h2>
+                        <h3 class="text-2xl text-gray-600 ">$ <span id="withdraw_text">00</span> </h3>
+                    </div>
+
+                    <div class="bg-violet-300 p-12 rounded-lg">
+                        <h2 class="text-3xl text-gray-600 font-bold">Balance</h2>
+                        <h3 class="text-2xl text-gray-600">$ <span id="balance_text"> 00</span></h3>
+                    </div>
+
+                </div>
+
+            </section>
+
+            <section class="mx-auto mx-12 mt-8">
+                <div class="grid grid-cols-2 gap-6 ">
+                    <!-- deposit input area -->
+
+                    <div class="bg-green-300 p-8 rounded-lg">
+                        <h2 class="text-3xl  font-bold">Your deposit</h2>
+                        <input class="p-2 block mt-3 " type="text" name="text2" id="deposit_input"
+                            placeholder="Enter the diposit Amount">
+
+
+                        <button id="deposit_btn"
+                            class="block mt-3 font-bold text-lg bg-yellow-300 rounded-md px-8 py-3 hover:bg-white">Deposit</button>
+                    </div>
+
+                    <!-- withdrwa input area -->
+
+                    <div class="bg-green-300 p-8 rounded-md">
+                        <h2 class="text-3xl  font-bold">Your Withdrawal</h2>
+                        <input class="p-2 block mt-3" type="text" name="text3" id="withdraw_input"
+                            placeholder="Enter the Withdrawal Amount ">
+
+                        <button id="withdraw_btn"
+                            class="block mt-3 font-bold text-lg bg-yellow-300 rounded-md px-8 py-3 hover:bg-white">Withdraw</button>
+                    </div>
+
+                </div>
+
+            </section>
+
+        </main>
+
+
+
+        <script src="deposit.js"></script>
+        <script src="withdraw.js"></script>
+        <script src="balance.js"></script>
+    </body>
+</html>
